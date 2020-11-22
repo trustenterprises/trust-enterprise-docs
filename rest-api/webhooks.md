@@ -28,7 +28,7 @@ Without verifying the signature at this step you cannot be sure that the message
 
 ## Example Webhook implementation
 
-We provide an example webhook implementation that you can copy for your needs, this is found in the [postman documentation](https://www.getpostman.com/collections/e61a0c42e7d572890996) and the[ implemented handler is on github](https://github.com/mattsmithies/hedera-serverless-consensus/blob/master/app/handler/exampleWebhookHandler.js) for inspiration.
+We provide an example webhook implementation that you can copy for your needs, this is found in the [postman documentation](https://www.getpostman.com/collections/e61a0c42e7d572890996) and the[ implemented handler is on github](https://github.com/trustenterprises/hedera-serverless-consensus/blob/master/app/handler/exampleWebhookHandler.js) for inspiration.
 
 The route of the webhook for the project is **/api/webhook.**
 
