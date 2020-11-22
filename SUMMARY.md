@@ -43,7 +43,7 @@
 
 ## Links
 
-* [Github](https://github.com/mattsmithies/hedera-serverless-consensus)
+* [Github](https://github.com/trustenterprises/hedera-serverless-consensus)
 * [Trust Enterprises](https://trust.enterprises/)
 * [Postman Documentation](https://www.getpostman.com/collections/e61a0c42e7d572890996)
 * [Hedera Network Status](https://status.hedera.com/)
