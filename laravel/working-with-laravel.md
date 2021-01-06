@@ -22,7 +22,7 @@ Alternatively, adding the **WEBHOOK\_URL** as a new environment variable in your
 
 ### A brief overview
 
-A Laravel client library to automate adding webhooks, feeding the trust responses into your database automatically. 
+A Laravel client library to automate adding webhooks, feeding the trust responses into your database automatically.
 
 1. A fluent PHP API that communicates with the REST API.
 2. Inbuilt database consensus table migrations that contain the bare bones of tables you need to have a stored log. 
@@ -30,6 +30,4 @@ A Laravel client library to automate adding webhooks, feeding the trust response
 4. Custom events on insert events so that you may easily add additional logic if required.
 
 ## \*\*\*\*
-
-
 

@@ -11,7 +11,7 @@ description: >-
 In your Vercel deployment set **WEBHOOK\_URL** to the **POST** route that you wish to send all messages and redeploy your API.
 
 {% hint style="info" %}
-Make sure that your **POST** route ****responds with the status code of **200.**
+Make sure that your **POST** route **\*\*responds with the status code of** 200.\*\*
 {% endhint %}
 
 ## Proving the source of messages
@@ -41,6 +41,4 @@ To conform your webhook to our standards and testing mechanism the behaviour is 
 If the incorrect HTTP method is used to request the webhook the status code will be **405 \(Method Not Allowed\).**
 
 If the **x-signature** cannot be verified with the payload a status code **400 \(Bad Request\)** will be returned.
-
-
 

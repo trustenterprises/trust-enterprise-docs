@@ -13,10 +13,10 @@ Wanna grab a coffee and want to chill out for 30 minutes with me and step throug
 
 ## The Goal
 
-A REST API to integrate trust into your SaaS product, at the lowest time cost, while owning the deployment, keeping control of the private keys and without any additional microservice overhead. 
+A REST API to integrate trust into your SaaS product, at the lowest time cost, while owning the deployment, keeping control of the private keys and without any additional microservice overhead.
 
 {% hint style="info" %}
-This serverless client for hedera hashgraph is currently in beta, there are issues and tasks we are currently working on, if you find anything that doesn't seem right [raise an issue.](https://github.com/trustenterprises/hedera-serverless-consensus/issues)
+This serverless client for hedera hashgraph is released on mainnet, there are issues and tasks we are currently working on, if you find anything that doesn't seem right [raise an issue.](https://github.com/trustenterprises/hedera-serverless-consensus/issues)
 {% endhint %}
 
 You can find out about the current [beta release](https://github.com/trustenterprises/hedera-serverless-consensus/projects/1) and [mainnet progress](https://github.com/trustenterprises/hedera-serverless-consensus/projects/2) with the project by in our [Github projects](https://github.com/trustenterprises/hedera-serverless-consensus/projects).
@@ -32,6 +32,4 @@ These are the steps you'll need to follow to start using your hedera hashgraph R
 In addition, you may update your secrets in your newly generated Github repository in order to use the inbuilt [Github Actions CI flow](https://app.gitbook.com/@flyinggazelle/s/serverless-hedera/deployment/github-actions).
 
 Otherwise, you can follow the mini introductory video course below:
-
-
 
