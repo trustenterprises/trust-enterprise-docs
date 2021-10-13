@@ -37,6 +37,7 @@
 * [Overview](laravel/working-with-laravel.md)
 * [Installation](laravel/installation.md)
 * [Interacting with your client](laravel/interacting-with-your-client.md)
+* [Create a Marketplace](laravel/create-a-marketplace.md)
 
 ## Contributing
 
