@@ -1,8 +1,8 @@
 ---
 description: >-
-  The REST API provides a number of resources to consume to check the status of
-  your account, update topics and send messages for generate timestamp
-  consensus.
+  The REST API provides a number of resources to create marketplaces, consume to
+  check the status of your account, update topics and send messages for generate
+  timestamp consensus.
 ---
 
 # Overview
@@ -16,6 +16,36 @@ If you live and die by your love of Postman for API development, we provide a co
 ## **The Routes**
 
 In all routes swap out the** **_**hedera-serverless-consensus.vercel.app **_for your URL.
+
+## Build a token marketplace
+
+A permissioned marketplace at your fingertips, link your users to tokens that you sell, without them having to touch or have any blockchain experience.  
+
+### Create a token 
+
+A token can be created to be linked to a frontend of a marketplace or online shopfront.
+
+{% content-ref url="tokens/create-a-token.md" %}
+[create-a-token.md](tokens/create-a-token.md)
+{% endcontent-ref %}
+
+### Create an account for a user
+
+Every user is required to have an account in tokens to be sent.
+
+{% content-ref url="accounts.md" %}
+[accounts.md](accounts.md)
+{% endcontent-ref %}
+
+### Bequest a token to a user
+
+Transfer a token that has been purchased to a user, the bequest feature manages all token associations by default so all you need to do is use this endpoint when ready, like verifying a payment.
+
+{% content-ref url="tokens/bequesting-a-token.md" %}
+[bequesting-a-token.md](tokens/bequesting-a-token.md)
+{% endcontent-ref %}
+
+## Confirm your deployment
 
 ### **Deployment Status**
 
@@ -33,6 +63,10 @@ Fetch the current account balance connected to the deployment, useful for checki
 [balance.md](balance.md)
 {% endcontent-ref %}
 
+## Manage topics and timestamped messages
+
+Topics and messages allow you to add "trusted" proof that an event has happened.
+
 ### Managing Topics
 
 Create, update and get the info for a topic that you use to send your consensus messages to.
@@ -48,6 +82,8 @@ Send a message to that you wish to get a trusted consensus timestamp for, you ma
 {% content-ref url="consensus-messages.md" %}
 [consensus-messages.md](consensus-messages.md)
 {% endcontent-ref %}
+
+##
 
 
 

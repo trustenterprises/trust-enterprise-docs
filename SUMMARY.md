@@ -19,16 +19,20 @@
 ## REST API
 
 * [Overview](rest-api/overview.md)
-* [Status](rest-api/status.md)
-* [Balance](rest-api/balance.md)
+* [Accounts](rest-api/accounts.md)
+* [Tokens](rest-api/tokens/README.md)
+  * [Create a token](rest-api/tokens/create-a-token.md)
+  * [Bequesting a token](rest-api/tokens/bequesting-a-token.md)
 * [Topics](rest-api/topics/README.md)
   * [Get topic info](rest-api/topics/get-topic-info.md)
   * [Creating a new topic](rest-api/topics/creating-a-new-topic.md)
   * [Updating a topic](rest-api/topics/updating-a-topic.md)
 * [Consensus Messages](rest-api/consensus-messages.md)
+* [Balance](rest-api/balance.md)
+* [Status](rest-api/status.md)
 * [Webhooks](rest-api/webhooks.md)
 
-## The Laravel Client <a id="laravel"></a>
+## The Laravel Client <a href="laravel" id="laravel"></a>
 
 * [Overview](laravel/working-with-laravel.md)
 * [Installation](laravel/installation.md)
@@ -44,8 +48,7 @@
 ## Links
 
 * [Github](https://github.com/trustenterprises/hedera-serverless-consensus)
-* [Trust Enterprises](https://trust.enterprises/)
+* [Trust Enterprises](https://trust.enterprises)
 * [Postman Documentation](https://www.getpostman.com/collections/e61a0c42e7d572890996)
-* [Hedera Network Status](https://status.hedera.com/)
-* [Remote Software Development](https://remotesoftwaredevelopment.com/)
-
+* [Hedera Network Status](https://status.hedera.com)
+* [Remote Software Development](https://remotesoftwaredevelopment.com)
