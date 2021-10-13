@@ -21,4 +21,3 @@ Due to the constraints of Vercel only providing a maximum of 12 unique routes fo
 The topic handler `pages/api/consensus/topic/[id].js` provides additional insight into how to wrap a single route to manage a given resource consisting of different handlers.
 
 Thank you to [James Wrightson](https://github.com/guerrillacontra) for your insight on handling injecting additional functionality as **context** for a given handler.
-

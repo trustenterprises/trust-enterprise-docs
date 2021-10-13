@@ -8,19 +8,19 @@ description: >-
 
 ## Using webhooks in the deployment
 
-In your Vercel deployment set **WEBHOOK\_URL** to the **POST** route that you wish to send all messages and redeploy your API.
+In your Vercel deployment set **WEBHOOK_URL** to the **POST** route that you wish to send all messages and redeploy your API.
 
 {% hint style="info" %}
-Make sure that your **POST** route **\*\*responds with the status code of** 200.\*\*
+Make sure that your **POST** route **\*\*responds with the status code of **200.\*\*
 {% endhint %}
 
 ## Proving the source of messages
 
 The concern of webhooks combined with trust is proving that the message came from the correct source.
 
-In the request there will be a header including an **x-signature** this will be a **HMAC hash** of the body and the **API\_SECRET\_KEY** using the SHA256 algorithm.
+In the request there will be a header including an **x-signature** this will be a **HMAC hash** of the body and the **API_SECRET_KEY** using the SHA256 algorithm.
 
-To trust the source of the message you'll need to match the signature by creating a hash of the body and **API\_SECRET\_KEY** in your server and comparing.
+To trust the source of the message you'll need to match the signature by creating a hash of the body and **API_SECRET_KEY** in your server and comparing.
 
 {% hint style="info" %}
 Without verifying the signature at this step you cannot be sure that the message you received is valid. Otherwise anyone that knew your webhook route could fake a consensus response.
@@ -38,7 +38,6 @@ To conform your webhook to our standards and testing mechanism the behaviour is 
 * The webhook requires a **x-signature** in its header, this is a **HMAC SHA256** signature.
 * The webhook is a valid signature of the entire payload body.
 
-If the incorrect HTTP method is used to request the webhook the status code will be **405 \(Method Not Allowed\).**
+If the incorrect HTTP method is used to request the webhook the status code will be **405 (Method Not Allowed).**
 
-If the **x-signature** cannot be verified with the payload a status code **400 \(Bad Request\)** will be returned.
-
+If the **x-signature** cannot be verified with the payload a status code **400 (Bad Request)** will be returned.

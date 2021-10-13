@@ -4,9 +4,7 @@ description: >-
   Enterprises.
 ---
 
-# Introduction of the Trust Enterprises project \[2:16\]
+# Introduction of the Trust Enterprises project \[2:16]
 
-{% embed url="https://www.youtube.com/watch?v=\_FNbAy66T38&list=PL68gBULBlEmfqmGRQeeaqOLuHbx45XUD9&index=1" %}
-
-
+{% embed url="https://www.youtube.com/watch?v=_FNbAy66T38&list=PL68gBULBlEmfqmGRQeeaqOLuHbx45XUD9&index=1" %}
 

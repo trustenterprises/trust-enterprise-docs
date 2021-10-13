@@ -6,50 +6,54 @@ description: >-
 
 # Consensus Messages
 
-{% api-method method="post" host="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/message/" %}
-{% api-method-summary %}
-Create new consensus message
-{% endapi-method-summary %}
+{% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/message/" method="post" summary="Create new consensus message" %}
+{% swagger-description %}
+This endpoint allows you to send a message to a topic id, you may simply broadcast the message, or wait for consensus to be reached using 
 
-{% api-method-description %}
-This endpoint allows you to send a message to a topic id, you may simply broadcast the message, or wait for consensus to be reached using  **allow\_synchronous\_consensus.**   
-  
-If you are using testnet or mainnet environments there will be a **explorer\_url** property linking to an external hashgraph explorer for the given transaction.
-{% endapi-method-description %}
+** allow_synchronous_consensus. **
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-The **API\_SECRET\_KEY** from th e client's environment variables.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+\
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="reference" type="string" required=false %}
+
+****
+
+\
+
+
+****
+
+If you are using testnet or mainnet environments there will be a 
+
+**explorer_url **
+
+property linking to an external hashgraph explorer for the given transaction.
+{% endswagger-description %}
+
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+The 
+
+**API_SECRET_KEY **
+
+from th e client's environment variables.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="reference" type="string" %}
 A reference to an internal app idenitier so that after the response it will be easier to link.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="allow\_synchronous\_consensus" type="boolean" required=false %}
+{% swagger-parameter in="query" name="allow_synchronous_consensus" type="boolean" %}
 Wait for consensus to be finished to finality before receiving a response.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="topic\_id" type="string" required=true %}
+{% swagger-parameter in="query" name="topic_id" type="string" %}
 The id of the topic you want to sent the message to.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="message" type="string" required=true %}
+{% swagger-parameter in="query" name="message" type="string" %}
 The string message that is sent to received a consensus response.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-New message sent to a topic, using a **topic\_id** and **message.**
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="New message sent to a topic, using a topic_id and message." %}
 ```
 {
     "data": {
@@ -63,10 +67,7 @@ New message sent to a topic, using a **topic\_id** and **message.**
         }
     }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
+{% endswagger-response %}
+{% endswagger %}
 
-**WARNING**: if you have a **WEBHOOK\_URL** set in your client it is recommended that you **do not set** the **allow\_synchronous\_consensus** to false due to the implications of the NodeJS event loop with AWS Lambda.
-
+**WARNING**: if you have a **WEBHOOK_URL** set in your client it is recommended that you **do not set **the **allow_synchronous_consensus** to false due to the implications of the NodeJS event loop with AWS Lambda.

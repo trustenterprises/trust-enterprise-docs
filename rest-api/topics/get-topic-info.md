@@ -4,36 +4,29 @@ description: Get the information for a given topic.
 
 # Get topic info
 
-{% api-method method="get" host="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/topic/:id" %}
-{% api-method-summary %}
-Get topic information
-{% endapi-method-summary %}
+{% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/topic/:id" method="get" summary="Get topic information" %}
+{% swagger-description %}
+Get detailed topic information.  There is currently a development effort in checking that a topic exists before attempting to fetch a receipt.
 
-{% api-method-description %}
-Get detailed topic information.  There is currently a development effort in checking that a topic exists before attempting to fetch a receipt.  
-{% endapi-method-description %}
+\
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+
+
+{% endswagger-description %}
+
+{% swagger-parameter in="path" name="id" type="string" %}
 The id of the topic
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="x-api-key" type="string" required=true %}
-The value set as **API\_SECRET\_KEY** in the client's environment.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% swagger-parameter in="header" name="x-api-key" type="string" %}
+The value set as 
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Topic information received
-{% endapi-method-response-example-description %}
+**API_SECRET_KEY **
 
+in the client's environment.
+{% endswagger-parameter %}
+
+{% swagger-response status="200" description="Topic information received" %}
 ```
 {
     "data": {
@@ -57,8 +50,5 @@ Topic information received
     }
 
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
+{% endswagger-response %}
+{% endswagger %}

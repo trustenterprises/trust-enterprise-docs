@@ -8,7 +8,7 @@ description: How to install and migrate the database.
 
 The Laravel Package is hosted on [Packagist](https://packagist.org/packages/trustenterprises/hashgraph). Install as below.
 
-```text
+```
 composer require trustenterprises/hashgraph
 ```
 
@@ -23,7 +23,7 @@ This package will have releases that will support Laravel 5.8.\* projects, the v
 
 Run these commands in your terminal to publish and migrate your new tables.
 
-```text
+```
 php artisan vendor:publish --provider="Trustenterprises\LaravelHashgraph\LaravelHashgraphServiceProvider" --tag="migrations"
 php artisan migrate
 ```
@@ -32,20 +32,19 @@ php artisan migrate
 
 Publish your config file with this command.
 
-```text
+```
 php artisan vendor:publish --provider="Trustenterprises\LaravelHashgraph\LaravelHashgraphServiceProvider" --tag="config"
 ```
 
 ## Adding your Environment Variables
 
-Update these environment variables in your **.env** file with your client URL and secret key.
+Update these environment variables in your **.env **file with your client URL and secret key.
 
-* HASHGRAPH\_NODE\_URL
-* HASHGRAPH\_SECRET\_KEY
+* HASHGRAPH_NODE_URL
+* HASHGRAPH_SECRET_KEY
 
 Don't forget to reset your server to update the config.
 
 ## Updating the webhook route
 
-By default the callback webhook route in the app ends with **/hashgraph** this can be changed by updating the **HASHGRAPH\_WEBHOOK\_ROUTE** in your Laravel App.
-
+By default the callback webhook route in the app ends with **/hashgraph **this can be changed by updating the **HASHGRAPH_WEBHOOK_ROUTE** in your Laravel App.

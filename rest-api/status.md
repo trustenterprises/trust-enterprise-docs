@@ -4,26 +4,34 @@ description: Get the current status of the deployed client
 
 # Status
 
-{% api-method method="get" host="https://hedera-serverless-consensus.vercel.app" path="/api/status" %}
-{% api-method-summary %}
-Get Status
-{% endapi-method-summary %}
+{% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/status" method="get" summary="Get Status" %}
+{% swagger-description %}
+This endpoint allows you to get the current status of the client, this information can be hidden by setting 
 
-{% api-method-description %}
-This endpoint allows you to get the current status of the client, this information can be hidden by setting **HIDE\_STATUS** in your environment variables.  
-  
-**Note:** The **authenticationKey** could return as false if it is shorter then 10 characters.
-{% endapi-method-description %}
+**HIDE_STATUS **
 
-{% api-method-spec %}
-{% api-method-request %}
+in your environment variables.
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-The current status of the deployed client.
-{% endapi-method-response-example-description %}
+\
 
+
+
+
+\
+
+
+
+
+**Note: **
+
+The 
+
+**authenticationKey**
+
+ could return as false if it is shorter then 10 characters.
+{% endswagger-description %}
+
+{% swagger-response status="200" description="The current status of the deployed client." %}
 ```
 {
     "message": "Your environment status for your client",
@@ -37,10 +45,6 @@ The current status of the deployed client.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

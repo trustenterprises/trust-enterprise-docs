@@ -4,30 +4,16 @@ description: Get the current account balance of the client
 
 # Balance
 
-{% api-method method="get" host="https://hedera-serverless-consensus.vercel.app" path="/api/account/balance" %}
-{% api-method-summary %}
-Get Account Balance
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/account/balance" method="get" summary="Get Account Balance" %}
+{% swagger-description %}
 This endpoint allows you to get the account balance of the client
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="x-api-key" type="string" required=true %}
-The value set as API\_SECRET\_KEY in the client's environment.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
-{% endapi-method-request %}
+{% swagger-parameter in="header" name="x-api-key" type="string" %}
+The value set as API_SECRET_KEY in the client's environment.
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Account balance response
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Account balance response" %}
 ```
 {
     "data": {
@@ -35,22 +21,14 @@ Account balance response
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=401 %}
-{% api-method-response-example-description %}
-Will ask to include a api-key, if invalid will return with "Unable to validate with the supplied 'x-api-key'"
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="401" description="Will ask to include a api-key, if invalid will return with "Unable to validate with the supplied 'x-api-key'"" %}
 ```
 {
     "reason": "Please set \"x-api-key\" in your header"
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

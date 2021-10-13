@@ -7,40 +7,32 @@ description: >-
 
 # Creating a new topic
 
-{% api-method method="post" host="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/topic/:id" %}
-{% api-method-summary %}
-Create new topic
-{% endapi-method-summary %}
+{% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/topic/:id" method="post" summary="Create new topic" %}
+{% swagger-description %}
+This endpoint will create a new topic that can be used to send messages to for a consensus timestamp. As this is an authenticated endpoint, 
 
-{% api-method-description %}
-This endpoint will create a new topic that can be used to send messages to for a consensus timestamp. As this is an authenticated endpoint, **401** errors will be shown on incorrect authentication keys.
-{% endapi-method-description %}
+**401**
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-headers %}
-{% api-method-parameter name="x-api-key" type="string" required=true %}
-The **API\_SECRET\_KEY** that is set in the clients environment.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+ errors will be shown on incorrect authentication keys.
+{% endswagger-description %}
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="memo" type="string" %}
+{% swagger-parameter in="header" name="x-api-key" type="string" %}
+The 
+
+**API_SECRET_KEY **
+
+that is set in the clients environment.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="memo" type="string" %}
 A memo that will be added to the topic, this can also be an escaped JSON string.
-{% endapi-method-parameter %}
+{% endswagger-parameter %}
 
-{% api-method-parameter name="enable\_private\_submit\_key" type="boolean" %}
+{% swagger-parameter in="query" name="enable_private_submit_key" type="boolean" %}
 Make sure that consensus messages can only be sent from the account that created the topic.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Topic created with a memo.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Topic created with a memo." %}
 ```
 {
     "data": {
@@ -49,13 +41,9 @@ Topic created with a memo.
     }
 }
 ```
-{% endapi-method-response-example %}
+{% endswagger-response %}
 
-{% api-method-response-example httpCode=422 %}
-{% api-method-response-example-description %}
-This occurs if any of the variables are invalid for the API to process
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="422" description="This occurs if any of the variables are invalid for the API to process" %}
 ```
 {
     "errors": [
@@ -63,10 +51,6 @@ This occurs if any of the variables are invalid for the API to process
     ]
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 

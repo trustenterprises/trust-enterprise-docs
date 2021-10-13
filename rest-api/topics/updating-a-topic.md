@@ -4,42 +4,28 @@ description: Update a topic with a different memo that is more suitable for your
 
 # Updating a topic
 
-{% api-method method="put" host="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/topic/:id" %}
-{% api-method-summary %}
-Update a topic
-{% endapi-method-summary %}
-
-{% api-method-description %}
+{% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/consensus/topic/:id" method="put" summary="Update a topic" %}
+{% swagger-description %}
 This endpoint allows you to update the memo of the topic, only from the original creator of the topic.
-{% endapi-method-description %}
+{% endswagger-description %}
 
-{% api-method-spec %}
-{% api-method-request %}
-{% api-method-path-parameters %}
-{% api-method-parameter name="id" type="string" required=true %}
+{% swagger-parameter in="path" name="id" type="string" %}
 The id of the topic.
-{% endapi-method-parameter %}
-{% endapi-method-path-parameters %}
+{% endswagger-parameter %}
 
-{% api-method-headers %}
-{% api-method-parameter name="Authentication" type="string" required=true %}
-The **API\_SECRET\_KEY** from the  client environment variables.
-{% endapi-method-parameter %}
-{% endapi-method-headers %}
+{% swagger-parameter in="header" name="Authentication" type="string" %}
+The 
 
-{% api-method-query-parameters %}
-{% api-method-parameter name="memo" type="string" required=false %}
+**API_SECRET_KEY **
+
+from the  client environment variables.
+{% endswagger-parameter %}
+
+{% swagger-parameter in="query" name="memo" type="string" %}
 The memo that you want to update the topic id to.
-{% endapi-method-parameter %}
-{% endapi-method-query-parameters %}
-{% endapi-method-request %}
+{% endswagger-parameter %}
 
-{% api-method-response %}
-{% api-method-response-example httpCode=200 %}
-{% api-method-response-example-description %}
-Cake successfully retrieved.
-{% endapi-method-response-example-description %}
-
+{% swagger-response status="200" description="Cake successfully retrieved." %}
 ```
 {
     "data": {
@@ -57,10 +43,6 @@ Cake successfully retrieved.
     }
 }
 ```
-{% endapi-method-response-example %}
-{% endapi-method-response %}
-{% endapi-method-spec %}
-{% endapi-method %}
-
-
+{% endswagger-response %}
+{% endswagger %}
 
