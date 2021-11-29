@@ -38,6 +38,7 @@
 * [Installation](laravel/installation.md)
 * [Interacting with your client](laravel/interacting-with-your-client.md)
 * [Create a Marketplace](laravel/create-a-marketplace.md)
+* [Checking account balances and sending tokens](laravel/checking-account-balances-and-sending-tokens.md)
 
 ## Contributing
 
