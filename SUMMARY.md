@@ -23,6 +23,7 @@
 * [Tokens](rest-api/tokens/README.md)
   * [Create a token](rest-api/tokens/create-a-token.md)
   * [Bequesting a token](rest-api/tokens/bequesting-a-token.md)
+  * [Token Holdings and Balance](rest-api/tokens/token-holdings-and-balance.md)
 * [Topics](rest-api/topics/README.md)
   * [Get topic info](rest-api/topics/get-topic-info.md)
   * [Creating a new topic](rest-api/topics/creating-a-new-topic.md)
@@ -32,7 +33,7 @@
 * [Status](rest-api/status.md)
 * [Webhooks](rest-api/webhooks.md)
 
-## The Laravel Client <a href="laravel" id="laravel"></a>
+## The Laravel Client <a href="#laravel" id="laravel"></a>
 
 * [Overview](laravel/working-with-laravel.md)
 * [Installation](laravel/installation.md)
