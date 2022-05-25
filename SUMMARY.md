@@ -51,7 +51,7 @@
 ## Links
 
 * [Github](https://github.com/trustenterprises/hedera-serverless-consensus)
-* [Trust Enterprises](https://trust.enterprises)
+* [Trust Enterprises](https://trust.enterprises/)
 * [Postman Documentation](https://www.getpostman.com/collections/e61a0c42e7d572890996)
-* [Hedera Network Status](https://status.hedera.com)
-* [Remote Software Development](https://remotesoftwaredevelopment.com)
+* [Hedera Network Status](https://status.hedera.com/)
+* [Remote Software Development](https://remotesoftwaredevelopment.com/)
