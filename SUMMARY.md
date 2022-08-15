@@ -19,6 +19,12 @@
 ## REST API
 
 * [Overview](rest-api/overview.md)
+* [NFT Ecosystem](rest-api/nft-ecosystem/README.md)
+  * [Create an NFT Collection](rest-api/nft-ecosystem/create-an-nft-collection.md)
+  * [Generate Metadata](rest-api/nft-ecosystem/generate-metadata.md)
+  * [Mint an NFT](rest-api/nft-ecosystem/mint-an-nft.md)
+  * [Transfer an NFT](rest-api/nft-ecosystem/transfer-an-nft.md)
+  * [Claiming NFTs through Passes](rest-api/nft-ecosystem/claiming-nfts-through-passes.md)
 * [Accounts](rest-api/accounts.md)
 * [Tokens](rest-api/tokens/README.md)
   * [Create a token](rest-api/tokens/create-a-token.md)

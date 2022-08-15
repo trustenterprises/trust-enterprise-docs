@@ -38,13 +38,13 @@ php artisan vendor:publish --provider="Trustenterprises\LaravelHashgraph\Laravel
 
 ## Adding your Environment Variables
 
-Update these environment variables in your **.env **file with your client URL and secret key.
+Update these environment variables in your **.env** file with your client URL and secret key.
 
-* HASHGRAPH_NODE_URL
-* HASHGRAPH_SECRET_KEY
+* HASHGRAPH\_NODE\_URL
+* HASHGRAPH\_SECRET\_KEY
 
 Don't forget to reset your server to update the config.
 
 ## Updating the webhook route
 
-By default the callback webhook route in the app ends with **/hashgraph **this can be changed by updating the **HASHGRAPH_WEBHOOK_ROUTE** in your Laravel App.
+By default the callback webhook route in the app ends with **/hashgraph** this can be changed by updating the **HASHGRAPH\_WEBHOOK\_ROUTE** in your Laravel App.

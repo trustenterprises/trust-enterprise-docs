@@ -21,9 +21,9 @@ The id of the topic
 {% swagger-parameter in="header" name="x-api-key" type="string" %}
 The value set as 
 
-**API_SECRET_KEY **
+**API_SECRET_KEY**
 
-in the client's environment.
+ in the client's environment.
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="Topic information received" %}

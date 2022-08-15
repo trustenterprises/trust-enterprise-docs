@@ -14,11 +14,11 @@ There are 3 routes that help to manage a given topic before sending consensus me
 Please note that currently the creation of new topics automatically set the admin key to be the public key of the account of the deployed client. This means that a topic may only be updated by that account, the memo can only be changed.
 {% endhint %}
 
-All routes required authentication through the **x-api-key **and a escaped JSON value can be injected into the memo to hold more information about the topic.
+All routes required authentication through the **x-api-key** and a escaped JSON value can be injected into the memo to hold more information about the topic.
 
 ### Get topic info
 
-Get the topic information using a supplied **topic_id.**
+Get the topic information using a supplied **topic\_id.**
 
 {% content-ref url="get-topic-info.md" %}
 [get-topic-info.md](get-topic-info.md)
@@ -26,7 +26,7 @@ Get the topic information using a supplied **topic_id.**
 
 ### Create new topic
 
-Create a topic with 2 optional values, the **memo **or the **enable_private_submit_key **which stops any other account to successfully sent a consensus message to the topic.
+Create a topic with 2 optional values, the **memo** or the **enable\_private\_submit\_key** which stops any other account to successfully sent a consensus message to the topic.
 
 {% content-ref url="creating-a-new-topic.md" %}
 [creating-a-new-topic.md](creating-a-new-topic.md)
@@ -34,7 +34,7 @@ Create a topic with 2 optional values, the **memo **or the **enable_private_subm
 
 ### Update a current topic
 
-Update the memo of a given topic by providing a **memo **property to the body.
+Update the memo of a given topic by providing a **memo** property to the body.
 
 {% content-ref url="updating-a-topic.md" %}
 [updating-a-topic.md](updating-a-topic.md)

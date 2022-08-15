@@ -41,11 +41,15 @@ Conceptually you may generate custodial Hedera accounts on behalf of your users 
 
 ## Optional Variables
 
-These variables are completely optional and aren't required but they unlock additional capacity for validating an installation of a client, webhook functionality and security.
+These variables are completely optional and aren't required but they unlock additional capacity for validating an installation of a client, webhook functionality, and security.
 
 * **API\_URL**
 * **WEBHOOK\_URL**&#x20;
 * **HIDE\_STATUS**
+* **NFT\_STORAGE\_TOKEN**
+* **MIRROR\_NODE\_URL**
+
+If you want to use our NFT flow functionality for the complete management of NFT over an API for the creation, minting, metadata generation, and advanced transfer feature you need both the **NFT\_STORAGE\_TOKEN** and **MIRROR\_NODE\_URL** set.
 
 The **API\_URL** variable is exclusively used by Github Actions to automatically check the status of a deployment, this isn't required to be part of the vercel deployment.
 

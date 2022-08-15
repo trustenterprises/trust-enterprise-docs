@@ -10,7 +10,9 @@ description: >-
 {% swagger-description %}
 This endpoint allows you to send a message to a topic id, you may simply broadcast the message, or wait for consensus to be reached using 
 
-** allow_synchronous_consensus. **
+**allow_synchronous_consensus.**
+
+ 
 
 \
 
@@ -24,17 +26,17 @@ This endpoint allows you to send a message to a topic id, you may simply broadca
 
 If you are using testnet or mainnet environments there will be a 
 
-**explorer_url **
+**explorer_url**
 
-property linking to an external hashgraph explorer for the given transaction.
+ property linking to an external hashgraph explorer for the given transaction.
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" %}
 The 
 
-**API_SECRET_KEY **
+**API_SECRET_KEY**
 
-from th e client's environment variables.
+ from th e client's environment variables.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="reference" type="string" %}
@@ -70,4 +72,4 @@ The string message that is sent to received a consensus response.
 {% endswagger-response %}
 {% endswagger %}
 
-**WARNING**: if you have a **WEBHOOK_URL** set in your client it is recommended that you **do not set **the **allow_synchronous_consensus** to false due to the implications of the NodeJS event loop with AWS Lambda.
+**WARNING**: if you have a **WEBHOOK\_URL** set in your client it is recommended that you **do not set** the **allow\_synchronous\_consensus** to false due to the implications of the NodeJS event loop with AWS Lambda.

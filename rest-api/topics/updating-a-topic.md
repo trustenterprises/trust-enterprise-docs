@@ -16,9 +16,9 @@ The id of the topic.
 {% swagger-parameter in="header" name="Authentication" type="string" %}
 The 
 
-**API_SECRET_KEY **
+**API_SECRET_KEY**
 
-from the  client environment variables.
+ from the  client environment variables.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="memo" type="string" %}

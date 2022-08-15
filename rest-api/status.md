@@ -8,23 +8,23 @@ description: Get the current status of the deployed client
 {% swagger-description %}
 This endpoint allows you to get the current status of the client, this information can be hidden by setting 
 
-**HIDE_STATUS **
+**HIDE_STATUS**
 
-in your environment variables.
-
-\
-
-
-
+ in your environment variables.
 
 \
 
 
 
 
-**Note: **
+\
 
-The 
+
+
+
+**Note:**
+
+ The 
 
 **authenticationKey**
 

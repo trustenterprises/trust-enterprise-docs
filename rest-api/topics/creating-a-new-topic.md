@@ -19,9 +19,9 @@ This endpoint will create a new topic that can be used to send messages to for a
 {% swagger-parameter in="header" name="x-api-key" type="string" %}
 The 
 
-**API_SECRET_KEY **
+**API_SECRET_KEY**
 
-that is set in the clients environment.
+ that is set in the clients environment.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="query" name="memo" type="string" %}

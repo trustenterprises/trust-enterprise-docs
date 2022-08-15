@@ -7,21 +7,21 @@ description: >-
 
 # Overview
 
-## Postman Documentation 
+## Postman Documentation&#x20;
 
-If you live and die by your love of Postman for API development, we provide a collection with examples that you can start using now. You'll need to create a new environment with fields for **domain **and **api_key**
+If you live and die by your love of Postman for API development, we provide a collection with examples that you can start using now. You'll need to create a new environment with fields for **domain** and **api\_key**
 
 [![Run in Postman](https://run.pstmn.io/button.svg)](https://app.getpostman.com/run-collection/416758-2c026d8f-795d-48c7-8554-4bbc17f797ad?action=collection%2Ffork\&collection-url=entityId%3D416758-2c026d8f-795d-48c7-8554-4bbc17f797ad%26entityType%3Dcollection#?env%5BTrust%20Enterprises%5D=W3sia2V5IjoiZG9tYWluIiwidmFsdWUiOiJodHRwczovL2hlZGVyYS1zZXJ2ZXJsZXNzLWNvbnNlbnN1cy52ZXJjZWwuYXBwIiwiZW5hYmxlZCI6dHJ1ZX0seyJrZXkiOiJhcGlfc2VjcmV0X2tleSIsInZhbHVlIjoiMTIzNDU2NzhhYmMiLCJlbmFibGVkIjp0cnVlfV0=)
 
 ## **The Routes**
 
-In all routes swap out the** **_**hedera-serverless-consensus.vercel.app **_for your URL.
+In all routes swap out the ** **_**hedera-serverless-consensus.vercel.app**_ for your URL.
 
 ## Build a token marketplace
 
-A permissioned marketplace at your fingertips, link your users to tokens that you sell, without them having to touch or have any blockchain experience.  
+A permissioned marketplace at your fingertips, link your users to tokens that you sell, without them having to touch or have any blockchain experience. &#x20;
 
-### Create a token 
+### Create a token&#x20;
 
 A token can be created to be linked to a frontend of a marketplace or online shopfront.
 
@@ -49,7 +49,7 @@ Transfer a token that has been purchased to a user, the bequest feature manages 
 
 ### **Deployment Status**
 
-Want to check the status of your client use **/api/status **remember to update **HIDE_STATUS **in your environment to **FALSE** if you want to hide this behaviour.
+Want to check the status of your client use **/api/status** remember to update **HIDE\_STATUS** in your environment to **FALSE** if you want to hide this behaviour.
 
 {% content-ref url="status.md" %}
 [status.md](status.md)

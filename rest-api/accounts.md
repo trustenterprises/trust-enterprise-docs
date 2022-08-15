@@ -10,19 +10,19 @@ description: >-
 
 {% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/account/create/" method="post" summary="Create new account" %}
 {% swagger-description %}
-This endpoint allows you to create a user, you can then link the response **accountId **to an actor you have in your system.
+This endpoint allows you to create a user, you can then link the response **accountId** to an actor you have in your system.
 
-You'll also receive an **encryptedKey **and **publicKey**, that you should store in your database.
+You'll also receive an **encryptedKey** and **publicKey**, that you should store in your database.
 
-The **encryptedKey** can be decrypted with your **API_SECRET_KEY.**
+The **encryptedKey** can be decrypted with your **API\_SECRET\_KEY.**
 {% endswagger-description %}
 
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
 The 
 
-**API_SECRET_KEY **
+**API_SECRET_KEY**
 
-from th e client's environment variables.
+ from th e client's environment variables.
 {% endswagger-parameter %}
 
 {% swagger-response status="200" description="New account to link to a user" %}

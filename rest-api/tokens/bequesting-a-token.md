@@ -19,9 +19,9 @@ This endpoint allows you to send a token to user as a permissioned function, pro
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
 The 
 
-**API_SECRET_KEY **
+**API_SECRET_KEY**
 
-from th e client's environment variables.
+ from th e client's environment variables.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="encrypted_receiver_key" required="true" %}

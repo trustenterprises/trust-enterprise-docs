@@ -8,7 +8,7 @@ description: >-
 
 ## Overview
 
-Understand that decentralisation is hard, many people don't have experience to use blockchain applications to use apps like [Metamask](https://metamask.io) and others. The role of this API and client is for you to build 
+Understand that decentralisation is hard, many people don't have experience to use blockchain applications to use apps like [Metamask](https://metamask.io/) and others. The role of this API and client is for you to build&#x20;
 
 {% hint style="warning" %}
 I'm going to assume that you know Laravel, creating of tables to link users to generated accounts. As we move forward there will be updates but for now this will be simple.
@@ -16,13 +16,13 @@ I'm going to assume that you know Laravel, creating of tables to link users to g
 
 ## Creating an account
 
-Create and connect a hedera account to a user you have in your system, I would suggest either adding a new field on your **users** table or creating a new **hedera_accounts** table for a one-to-many relationship.
+Create and connect a hedera account to a user you have in your system, I would suggest either adding a new field on your **users** table or creating a new **hedera\_accounts** table for a one-to-many relationship.
 
 In this case I am using a simple approach that a user can only have one hedera account, thus three new fields have been added to a user migration.
 
-* encrypted_key
-* public_key
-* hedera_id
+* encrypted\_key
+* public\_key
+* hedera\_id
 
 ### Imports
 
@@ -53,7 +53,7 @@ $user->save();
 Create a token that can be sent to a user's account after an event or a purchase.
 
 {% hint style="info" %}
-Recommend that you create a new table to hold the details of a minted token. Use the returned **tokenId **at the primary key.
+Recommend that you create a new table to hold the details of a minted token. Use the returned **tokenId** at the primary key.
 {% endhint %}
 
 ### Imports
@@ -81,7 +81,7 @@ $token->getTokenId();
 
 Bequesting or sending a token to an account that has been generated, and linked to a user in your local database. This bypasses hedera's default association behaviour.
 
-This is the magic element that provides a **permissioned marketplace**, the ability to send tokens of any asset to a user from any event. 
+This is the magic element that provides a **permissioned marketplace**, the ability to send tokens of any asset to a user from any event.&#x20;
 
 ### Imports
 

@@ -6,7 +6,7 @@ description: Create a token with a name, symbol, supply, and memo.
 
 {% swagger baseUrl="https://hedera-serverless-consensus.vercel.app" path="/api/token" method="post" summary="Create new token" %}
 {% swagger-description %}
-This endpoint allows you to create a token with a name, symbol, supply, and memo. 
+This endpoint allows you to create a token with a name, symbol, supply, and memo.&#x20;
 
 The memo is an important feature to allow linking but not exclusive to: Hedera Topic IDs (dynamic NFTs), decentralised identity (DIDs), or IPFS (dStorage) images/files.
 {% endswagger-description %}
@@ -14,9 +14,9 @@ The memo is an important feature to allow linking but not exclusive to: Hedera T
 {% swagger-parameter in="header" name="Authentication" type="string" required="true" %}
 The 
 
-**API_SECRET_KEY **
+**API_SECRET_KEY**
 
-from th e client's environment variables.
+ from th e client's environment variables.
 {% endswagger-parameter %}
 
 {% swagger-parameter in="body" name="symbol" required="true" %}
