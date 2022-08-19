@@ -14,7 +14,7 @@ There are 3 required fields needed to create an NFT:
 * collection\_name
 * supply
 
-In addition, **royalties of 5% are automatically added, these may be turned off.** After all, we don't live in a web2 world anymore.
+In addition, **royalties of 5.25% are automatically added, these may be turned off.** After all, we don't live in a web2 world anymore. For future secondary sales, you will receive 5% and this tooling treasury will receive **0.25% or 5% of the current royal structure.**
 
 These are the optional fields you can use:
 
