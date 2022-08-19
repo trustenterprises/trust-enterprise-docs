@@ -11,7 +11,7 @@ Note, that by using these tools for creating NFTs, we will add **5%** to the cur
 
 
 
-As a developer or project owner, you may fork our repositories and remove this additional royalty, however, you might not receive any support from the team.
+As a developer or project owner, you may fork our repositories and remove this additional royalty, however, you probably will **not** receive any support from the team and it will make Matt sad...
 
 
 

@@ -30,23 +30,6 @@ For interrogating NFT data during development we recommend using [Gomint's NFT e
 
 Below is the flow to take to start creating NFTs through the API, we will go into more details in the corresponding pages:
 
-{% hint style="warning" %}
-Note, that by using these tools for creating NFTs, we will add **5%** to the current royalty structure for secondary sales we will receive.
-
-
-
-As a developer or project owner, you may fork our repositories and remove this additional royalty, however, you probably will **not** receive any support from the team and it will make Matt sad...
-
-
-
-Our royalty accounts are as follows:
-
-\
-Testnet: 0.0.34319163
-
-Mainnet: **** 0.0.1119570
-{% endhint %}
-
 ### Create an NFT
 
 An NFT can be created, before minting, to be viewable on hashgraph ledger.
