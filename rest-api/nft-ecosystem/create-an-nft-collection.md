@@ -6,6 +6,23 @@ description: >-
 
 # Create an NFT Collection
 
+{% hint style="warning" %}
+Note, that by using these tools for creating NFTs, we will add **5%** to the current royalty structure for secondary sales we will receive.
+
+
+
+As a developer or project owner, you may fork our repositories and remove this additional royalty, however, you might not receive any support from the team.
+
+
+
+Our royalty accounts are as follows:
+
+\
+Testnet: 0.0.34319163
+
+Mainnet: **** 0.0.1119570
+{% endhint %}
+
 ### Overview
 
 There are 3 required fields needed to create an NFT:
