@@ -16,6 +16,10 @@ We are just focused on minting and sending/bequesting of tokens to a user, in a 
 
 For the developers out there I recommend digging into the API code and changing the behaviour as you see fit, the architecture and testing suite of the API is strong and delivers an incredible foundational layer.
 
+{% hint style="info" %}
+[Release 2.2.0](https://github.com/trustenterprises/hedera-serverless-api/releases/tag/2.2.0) finally adds support for explicitly setting external token decimals instead of relying on defaults 😅
+{% endhint %}
+
 ### Minting Tokens
 
 A token can be created to be linked to a frontend of a marketplace or online shopfront.
