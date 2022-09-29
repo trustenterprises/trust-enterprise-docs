@@ -31,10 +31,6 @@ Name of the token
 Number of tokens to mint, whole.
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="decimals" type="int" %}
-decimals of the token, if not present will default to 6.
-{% endswagger-parameter %}
-
 {% swagger-parameter in="body" name="memo" %}
 Attached memo to a token, for linking to external content or for dynamic NFT purposes.
 {% endswagger-parameter %}

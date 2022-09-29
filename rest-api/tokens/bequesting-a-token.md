@@ -40,10 +40,6 @@ Account id of receiving account
 amount of tokens to send
 {% endswagger-parameter %}
 
-{% swagger-parameter in="body" name="decimals" type="Number" %}
-Explicitly set decimals of the token
-{% endswagger-parameter %}
-
 {% swagger-response status="200" description="Token sent to user" %}
 ```
 {

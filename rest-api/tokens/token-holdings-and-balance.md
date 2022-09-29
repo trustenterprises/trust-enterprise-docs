@@ -26,6 +26,10 @@ account id in 0.0.x format
 token id in 0.0.x format
 {% endswagger-parameter %}
 
+{% swagger-parameter in="query" name="decimals" type="Number" %}
+Set the number of expected decimals
+{% endswagger-parameter %}
+
 {% swagger-response status="200" description="Account balance response" %}
 ```
 {
